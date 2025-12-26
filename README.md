@@ -31,7 +31,7 @@ The columns needed for functionality are:
 ```2. user_watched.csv```
 This is written up by the user and requires:
 - ```anime_title```: Must match the title in ```mal_anime.csv```
-- ```user_rating```: PErsonal score from ```1.0``` to ```10.0```
+- ```user_rating```: Personal score from ```1.0``` to ```10.0```
 
 ---
 
