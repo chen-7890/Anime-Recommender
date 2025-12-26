@@ -5,7 +5,7 @@ This is a Python tool that generates personalized anime recommendawtions using T
 it uses a Hybrid Content Based Filtering approach by combing four metrics in order to build the user's taste profile.
 
 1. Genre Profile: Uses TF-IDF to turn genres into vectors, then calculating the cosine similarity between your profile and the list of unwatched anime.
-2. Popularity: Factors in the number of members for a particular anime in MyAnimeList (MAL).
+2. Popularity: Factors in the number of members for a particular anime in Mymal_anime (MAL).
 3. Quality: Factors in the MAL community users' ratings in order to raise the overall quality of recommendations.
 4. Recency: Gives some weighting onto newer anime.
 
@@ -18,7 +18,7 @@ This script was made in Python 3.13.
 ``` pip install pandas numpy scikit-learn```
 
 Two CSV files are used in the same directory:
-```1. AnimeList.csv```
+```1. mal_anime.csv```
 This is taken from a Kaggle dataset by Syahrual Apriansyah that contains animes and their attributes found on MAL. The Link is found at the end of the README.MD. 
 The columns needed for functionality are:
 ```- title```
@@ -30,7 +30,7 @@ The columns needed for functionality are:
 
 ```2. user_watched.csv```
 This is written up by the user and requires:
-- ```anime_title```: Must match the title in ```AnimeList.csv```
+- ```anime_title```: Must match the title in ```mal_anime.csv```
 - ```user_rating```: PErsonal score from ```1.0``` to ```10.0```
 
 ---
@@ -117,4 +117,4 @@ In the ```user_watched.csv```, the format is ```anime_title,user_rating``` as se
 
 ##### Credits
 
-The dataset was taken from Kaggle by user Syahrual Apriansyah: https://www.kaggle.com/datasets/syahrulapriansyah2/myanimelist-2025 
+The dataset was taken from Kaggle by user Syahrual Apriansyah: https://www.kaggle.com/datasets/syahrulapriansyah2/mymal_anime-2025 
