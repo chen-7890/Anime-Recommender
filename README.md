@@ -117,4 +117,5 @@ In the ```user_watched.csv```, the format is ```anime_title,user_rating``` as se
 
 ##### Credits
 
-The dataset was taken from Kaggle by user Syahrual Apriansyah: https://www.kaggle.com/datasets/syahrulapriansyah2/mymal_anime-2025 
+The dataset was taken from Kaggle by user Syahrual Apriansyah: https://www.kaggle.com/datasets/syahrulapriansyah2/mymal_anime-2025.
+The file was too large to be uploaded to GitHub.
