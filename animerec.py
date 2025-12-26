@@ -331,9 +331,9 @@ NUM_RECOMMENDATIONS = 30
 
 top_results = final_recommendation.head(NUM_RECOMMENDATIONS)
 
-print("\n '=' * 25")
+print("\n {'=' * 25}")
 print(f"Your Top {NUM_RECOMMENDATIONS} Anime Recommendations")
-print("\n '=' * 25")
+print("\n {'=' * 25}")
 
 
 if top_results.empty:
@@ -353,5 +353,6 @@ else:
         print(f"   MAL Link: {source_url}")
                      
         rank_counter += 1
+
 
 print("\n '=' * 25")
