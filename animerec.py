@@ -57,10 +57,10 @@ def get_base_title(title):
 
 # Load the main anime dataset
 try:
-    anime_df = pd.read_csv('AnimeList.csv', low_memory=False) 
+    anime_df = pd.read_csv('mal_anime.csv', low_memory=False) 
     print("Main Anime dataset loaded successfully")
 except FileNotFoundError:
-    print("ERROR: AnimeList.csv not found.")
+    print("ERROR: mal_anime.csv not found.")
     sys.exit()
 
 # USER DATA LOADING 
@@ -91,7 +91,7 @@ anime_df = anime_df.dropna(subset=['Genres']).drop_duplicates(subset=['title']).
 # Type Grouping and Filtering 
 TYPE_COLUMN = 'Type' 
 if TYPE_COLUMN not in anime_df.columns:
-    print(f"\nCRITICAL ERROR: Column '{TYPE_COLUMN}' not found in AnimeList.csv.")
+    print(f"\nCRITICAL ERROR: Column '{TYPE_COLUMN}' not found in mal_anime.csv.")
     sys.exit()
 
 anime_df[TYPE_COLUMN] = anime_df[TYPE_COLUMN].astype(str).str.strip().str.lower().fillna('unknown')
@@ -123,7 +123,7 @@ watched_mask = anime_df['title'].isin(watched_titles)
 watched_df = anime_df[watched_mask].copy()
 
 if watched_df.empty:
-    print("\nCRITICAL ERROR: No watched anime titles matched. Please ensure titles in 'user_watched.csv' exactly match titles in 'AnimeList.csv' (including case).")
+    print("\nCRITICAL ERROR: No watched anime titles matched. Please ensure titles in 'user_watched.csv' exactly match titles in 'mal_anime.csv' (including case).")
     sys.exit()
 
 # Merge User Ratings (1-10) into watched_df
@@ -356,4 +356,5 @@ else:
 
 
 print("\n {'=' * 50}")
+
 
