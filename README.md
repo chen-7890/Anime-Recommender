@@ -19,7 +19,7 @@ This script was made in Python 3.13.
 
 Two CSV files are used in the same directory:
 ```1. AnimeList.csv```
-This is taken from a Kaggle dataset by Syahrual Apriansyah that contains animes and their attributes found on MAL.
+This is taken from a Kaggle dataset by Syahrual Apriansyah that contains animes and their attributes found on MAL. The Link is found at the end of the README.MD. 
 The columns needed for functionality are:
 ```- title```
 ```- Genres```
@@ -106,6 +106,7 @@ The user can change the number of recommendations by adjusting the variable ```N
 
 I could not get the JikanAPI to load properly in the script so the user will have to manually add the anime they have watched into the csv.
 The anime's title in the dataset matches the first name that shows up on the MAL page. 
+
 <img width="404" height="462" alt="image" src="https://github.com/user-attachments/assets/e6fe09ca-1301-4659-8530-f56730b194d8" />
 
 (In this case, the anime's title would be ```Shingeki no Kyojin```)
